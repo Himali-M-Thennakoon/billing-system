@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<header>
+    <h1>Thennakoon Stores</h1>
+</header>
+
+<main>
+    <div id ="bill-form">
+        <h2>New Bill</h2>
+
+<label>Customer Name:</label>
+<input type="text" id="customer-name" placeholder="Enter customer name">
+
+<div id ="item-section">
+    <input type="text" id="item" placeholder="Item ">
+    <input type="number" id="item-qty" placeholder="Quantity">
+    <input type="number" id="item-price" placeholder="Price">
+    <button id="add-item-btn">Add Item</button>
+</div>
+
+<table id="item-table">
+    <thead>
+        <tr>
+            <th>Item </th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody id="item-body">
+       
+    </tbody>
+ </table>
+
+ <h3>Total:Rs. <span id="grand-total">0.00</span></h3>
+
+ <button id="print-btn">Print Bill</button>
+
+    </div>
+</main>
+
+<div id="bill-preview">
+    <h2>Bill Preview</h2>
+</div>
+
+<script src="src/app.js"></script>
+
+</body>
+</html>
